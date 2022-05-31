@@ -35,5 +35,26 @@ function calcularPrecioConDescuento(precio, descuento) {
 
     // retornamos el valor
     return precioConDescuento;
+}
 
+// dentro de esta funcion tenemos que mandar a llamar a nuestra funcion "calcularPrecioConDescuento", pero ¿Cual va ser el precio? y ¿Cual va a hacer el descuento?. Eso lo hacemos con el "metodo" document.getElementById()
+function onClickButtonPriceDiscount() {
+    // vamos a mandar a llamar al ID del <input "price"> y tambien del <input "discount">
+    const inputPrice = document.getElementById("inputPrice");
+    // recibimos el valor, no nada mas el input de los usarios con la siguiente variable.
+    const priceValue = inputPrice.value;
+
+    const inputDiscount = document.getElementById("inputDiscount");
+    // recibimos el valor, no nada mas el input de los usarios con la siguiente variable.
+    const discountValue = inputDiscount.value;
+
+
+    // una vez teniendo los 2 valores mandamos a llamar a nuestra funcion "calcularPrecioConDescuento"
+    const precioConDescuento = calcularPrecioConDescuento(priceValue, discountValue);
+    // ya tenemos nuestro precio con descuento
+
+    // ahora se le mandara un mensaje en HTML sobre el resultado, ya no va a ser con un "alert()"
+    const resultP = document.getElementById("resultPrice");
+    // mandamos a llamar a su "Atributo" o "Metodo" que es -> innerText
+    resultP.innerText = "El precio con descuento son: $" + precioConDescuento;
 }
