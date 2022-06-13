@@ -1,12 +1,12 @@
 // Necesitamos una lista de elementos
 // la "constante" "lista1" es un array
 // y metemos los elementos que necesitemos en nuestra lista, en este caso es una lista de solo numeros
-// ------> const lista1 = [
-//     100,
-//     200,
-//     300,
-//     500,
-// ];
+const lista1 = [
+    100,
+    200,
+    300,
+    500,
+];
 // La meta de esta practica es calcular el Promedio, es decir la Media Aritmetica, de esta variable "lista1"
 
 // Pasos para poder calcular el Promedio o Media Aritmetica
