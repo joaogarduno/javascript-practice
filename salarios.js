@@ -40,3 +40,12 @@ mexico.push({
     name: "Veronica",
     salary: 2000,
 });
+mexico.push({
+    name: "Susy",
+    salary: 600,
+});
+
+mexico.push({
+    name: "Marce",
+    salary: 500,
+});
